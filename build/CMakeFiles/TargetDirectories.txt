@@ -1,0 +1,6 @@
+/home/basicecho/Desktop/project/my_json/build/CMakeFiles/rebuild_cache.dir
+/home/basicecho/Desktop/project/my_json/build/CMakeFiles/edit_cache.dir
+/home/basicecho/Desktop/project/my_json/build/CMakeFiles/test0.dir
+/home/basicecho/Desktop/project/my_json/build/src/CMakeFiles/rebuild_cache.dir
+/home/basicecho/Desktop/project/my_json/build/src/CMakeFiles/edit_cache.dir
+/home/basicecho/Desktop/project/my_json/build/src/CMakeFiles/SRC_LIST.dir

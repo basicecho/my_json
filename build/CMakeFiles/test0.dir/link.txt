@@ -1,1 +1,0 @@
-/usr/bin/c++  -g  -rdynamic CMakeFiles/test0.dir/test/test0.cpp.o  -o test0  src/libSRC_LIST.a 

@@ -8,6 +8,10 @@
 
 ../include/leptjson.h
 
+../include/literal.h
+leptjson.h
+../include/leptjson.h
+
 ../include/util.h
 leptjson.h
 ../include/leptjson.h
@@ -17,7 +21,15 @@ leptjson.h
 /home/basicecho/Desktop/project/my_json/src/leptjson.h
 util.h
 /home/basicecho/Desktop/project/my_json/src/util.h
+literal.h
+/home/basicecho/Desktop/project/my_json/src/literal.h
 iostream
+-
+
+/home/basicecho/Desktop/project/my_json/src/literal.cpp
+literal.h
+/home/basicecho/Desktop/project/my_json/src/literal.h
+cstddef
 -
 
 /home/basicecho/Desktop/project/my_json/src/util.cpp

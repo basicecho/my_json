@@ -1,5 +1,6 @@
 #include "leptjson.h"
 #include "util.h"
+#include "literal.h"
 
 #include <iostream>
 
@@ -8,6 +9,9 @@ using namespace my_json;
 int lept_parse_value(lept_value & value, lept_content & con) {
     switch(*con.json) {
         case '\0':  return LEPT_PARSE_EXPECT_VALUE;
+        case 'n':   return lept_parse_literal(value, con, "null", LEPT_NULL);
+        case 'f':   return lept_parse_literal(value, con, "false", LEPT_FALSE);
+        case 't':   return lept_parse_literal(value, con, "true", LEPT_TRUE);
         default:    return LEPT_PARSE_INVALID_VALUE;
     }
 }

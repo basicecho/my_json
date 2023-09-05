@@ -7,5 +7,5 @@ add_subdirectory(src)
 
 include_directories(include)
 
-add_executable(test0 test/test0.cpp)
-target_link_libraries(test0 PUBLIC SRC_LIST)
+add_executable(test_0 test/test_0.cpp)
+target_link_libraries(test_0 PUBLIC SRC_LIST)

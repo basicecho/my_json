@@ -1,2 +1,2 @@
-/usr/bin/ar qc libSRC_LIST.a  CMakeFiles/SRC_LIST.dir/leptjson.cpp.o CMakeFiles/SRC_LIST.dir/util.cpp.o
+/usr/bin/ar qc libSRC_LIST.a  CMakeFiles/SRC_LIST.dir/leptjson.cpp.o CMakeFiles/SRC_LIST.dir/util.cpp.o CMakeFiles/SRC_LIST.dir/literal.cpp.o
 /usr/bin/ranlib libSRC_LIST.a

@@ -111,17 +111,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named test0
+# Target rules for targets named test_0
 
 # Build rule for target.
-test0: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 test0
-.PHONY : test0
+test_0: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test_0
+.PHONY : test_0
 
 # fast build rule for target.
-test0/fast:
-	$(MAKE) -f CMakeFiles/test0.dir/build.make CMakeFiles/test0.dir/build
-.PHONY : test0/fast
+test_0/fast:
+	$(MAKE) -f CMakeFiles/test_0.dir/build.make CMakeFiles/test_0.dir/build
+.PHONY : test_0/fast
 
 #=============================================================================
 # Target rules for targets named SRC_LIST
@@ -136,32 +136,32 @@ SRC_LIST/fast:
 	$(MAKE) -f src/CMakeFiles/SRC_LIST.dir/build.make src/CMakeFiles/SRC_LIST.dir/build
 .PHONY : SRC_LIST/fast
 
-test/test0.o: test/test0.cpp.o
+test/test_0.o: test/test_0.cpp.o
 
-.PHONY : test/test0.o
+.PHONY : test/test_0.o
 
 # target to build an object file
-test/test0.cpp.o:
-	$(MAKE) -f CMakeFiles/test0.dir/build.make CMakeFiles/test0.dir/test/test0.cpp.o
-.PHONY : test/test0.cpp.o
+test/test_0.cpp.o:
+	$(MAKE) -f CMakeFiles/test_0.dir/build.make CMakeFiles/test_0.dir/test/test_0.cpp.o
+.PHONY : test/test_0.cpp.o
 
-test/test0.i: test/test0.cpp.i
+test/test_0.i: test/test_0.cpp.i
 
-.PHONY : test/test0.i
+.PHONY : test/test_0.i
 
 # target to preprocess a source file
-test/test0.cpp.i:
-	$(MAKE) -f CMakeFiles/test0.dir/build.make CMakeFiles/test0.dir/test/test0.cpp.i
-.PHONY : test/test0.cpp.i
+test/test_0.cpp.i:
+	$(MAKE) -f CMakeFiles/test_0.dir/build.make CMakeFiles/test_0.dir/test/test_0.cpp.i
+.PHONY : test/test_0.cpp.i
 
-test/test0.s: test/test0.cpp.s
+test/test_0.s: test/test_0.cpp.s
 
-.PHONY : test/test0.s
+.PHONY : test/test_0.s
 
 # target to generate assembly for a file
-test/test0.cpp.s:
-	$(MAKE) -f CMakeFiles/test0.dir/build.make CMakeFiles/test0.dir/test/test0.cpp.s
-.PHONY : test/test0.cpp.s
+test/test_0.cpp.s:
+	$(MAKE) -f CMakeFiles/test_0.dir/build.make CMakeFiles/test_0.dir/test/test_0.cpp.s
+.PHONY : test/test_0.cpp.s
 
 # Help Target
 help:
@@ -171,11 +171,11 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... test0"
+	@echo "... test_0"
 	@echo "... SRC_LIST"
-	@echo "... test/test0.o"
-	@echo "... test/test0.i"
-	@echo "... test/test0.s"
+	@echo "... test/test_0.o"
+	@echo "... test/test_0.i"
+	@echo "... test/test_0.s"
 .PHONY : help
 
 

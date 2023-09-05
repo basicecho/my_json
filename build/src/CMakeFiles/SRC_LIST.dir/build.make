@@ -83,19 +83,34 @@ src/CMakeFiles/SRC_LIST.dir/util.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SRC_LIST.dir/util.cpp.s"
 	cd /home/basicecho/Desktop/project/my_json/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/basicecho/Desktop/project/my_json/src/util.cpp -o CMakeFiles/SRC_LIST.dir/util.cpp.s
 
+src/CMakeFiles/SRC_LIST.dir/literal.cpp.o: src/CMakeFiles/SRC_LIST.dir/flags.make
+src/CMakeFiles/SRC_LIST.dir/literal.cpp.o: ../src/literal.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/basicecho/Desktop/project/my_json/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/CMakeFiles/SRC_LIST.dir/literal.cpp.o"
+	cd /home/basicecho/Desktop/project/my_json/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SRC_LIST.dir/literal.cpp.o -c /home/basicecho/Desktop/project/my_json/src/literal.cpp
+
+src/CMakeFiles/SRC_LIST.dir/literal.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SRC_LIST.dir/literal.cpp.i"
+	cd /home/basicecho/Desktop/project/my_json/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/basicecho/Desktop/project/my_json/src/literal.cpp > CMakeFiles/SRC_LIST.dir/literal.cpp.i
+
+src/CMakeFiles/SRC_LIST.dir/literal.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SRC_LIST.dir/literal.cpp.s"
+	cd /home/basicecho/Desktop/project/my_json/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/basicecho/Desktop/project/my_json/src/literal.cpp -o CMakeFiles/SRC_LIST.dir/literal.cpp.s
+
 # Object files for target SRC_LIST
 SRC_LIST_OBJECTS = \
 "CMakeFiles/SRC_LIST.dir/leptjson.cpp.o" \
-"CMakeFiles/SRC_LIST.dir/util.cpp.o"
+"CMakeFiles/SRC_LIST.dir/util.cpp.o" \
+"CMakeFiles/SRC_LIST.dir/literal.cpp.o"
 
 # External object files for target SRC_LIST
 SRC_LIST_EXTERNAL_OBJECTS =
 
 src/libSRC_LIST.a: src/CMakeFiles/SRC_LIST.dir/leptjson.cpp.o
 src/libSRC_LIST.a: src/CMakeFiles/SRC_LIST.dir/util.cpp.o
+src/libSRC_LIST.a: src/CMakeFiles/SRC_LIST.dir/literal.cpp.o
 src/libSRC_LIST.a: src/CMakeFiles/SRC_LIST.dir/build.make
 src/libSRC_LIST.a: src/CMakeFiles/SRC_LIST.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/basicecho/Desktop/project/my_json/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library libSRC_LIST.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/basicecho/Desktop/project/my_json/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX static library libSRC_LIST.a"
 	cd /home/basicecho/Desktop/project/my_json/build/src && $(CMAKE_COMMAND) -P CMakeFiles/SRC_LIST.dir/cmake_clean_target.cmake
 	cd /home/basicecho/Desktop/project/my_json/build/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/SRC_LIST.dir/link.txt --verbose=$(VERBOSE)
 

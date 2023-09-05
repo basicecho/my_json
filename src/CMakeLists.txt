@@ -1,4 +1,8 @@
-add_library(SRC_LIST leptjson.cpp util.cpp)
+add_library(SRC_LIST 
+                leptjson.cpp 
+                util.cpp
+                literal.cpp
+)
 
 include_directories(${CMAKE_SOURCE_DIR}/include)
 

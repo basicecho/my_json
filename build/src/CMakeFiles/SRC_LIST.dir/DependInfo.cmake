@@ -5,6 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/basicecho/Desktop/project/my_json/src/leptjson.cpp" "/home/basicecho/Desktop/project/my_json/build/src/CMakeFiles/SRC_LIST.dir/leptjson.cpp.o"
+  "/home/basicecho/Desktop/project/my_json/src/literal.cpp" "/home/basicecho/Desktop/project/my_json/build/src/CMakeFiles/SRC_LIST.dir/literal.cpp.o"
   "/home/basicecho/Desktop/project/my_json/src/util.cpp" "/home/basicecho/Desktop/project/my_json/build/src/CMakeFiles/SRC_LIST.dir/util.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

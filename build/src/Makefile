@@ -152,6 +152,33 @@ leptjson.cpp.s:
 	cd /home/basicecho/Desktop/project/my_json/build && $(MAKE) -f src/CMakeFiles/SRC_LIST.dir/build.make src/CMakeFiles/SRC_LIST.dir/leptjson.cpp.s
 .PHONY : leptjson.cpp.s
 
+literal.o: literal.cpp.o
+
+.PHONY : literal.o
+
+# target to build an object file
+literal.cpp.o:
+	cd /home/basicecho/Desktop/project/my_json/build && $(MAKE) -f src/CMakeFiles/SRC_LIST.dir/build.make src/CMakeFiles/SRC_LIST.dir/literal.cpp.o
+.PHONY : literal.cpp.o
+
+literal.i: literal.cpp.i
+
+.PHONY : literal.i
+
+# target to preprocess a source file
+literal.cpp.i:
+	cd /home/basicecho/Desktop/project/my_json/build && $(MAKE) -f src/CMakeFiles/SRC_LIST.dir/build.make src/CMakeFiles/SRC_LIST.dir/literal.cpp.i
+.PHONY : literal.cpp.i
+
+literal.s: literal.cpp.s
+
+.PHONY : literal.s
+
+# target to generate assembly for a file
+literal.cpp.s:
+	cd /home/basicecho/Desktop/project/my_json/build && $(MAKE) -f src/CMakeFiles/SRC_LIST.dir/build.make src/CMakeFiles/SRC_LIST.dir/literal.cpp.s
+.PHONY : literal.cpp.s
+
 util.o: util.cpp.o
 
 .PHONY : util.o
@@ -191,6 +218,9 @@ help:
 	@echo "... leptjson.o"
 	@echo "... leptjson.i"
 	@echo "... leptjson.s"
+	@echo "... literal.o"
+	@echo "... literal.i"
+	@echo "... literal.s"
 	@echo "... util.o"
 	@echo "... util.i"
 	@echo "... util.s"

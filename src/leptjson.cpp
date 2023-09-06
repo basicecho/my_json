@@ -1,6 +1,7 @@
 #include "leptjson.h"
 #include "util.h"
 #include "literal.h"
+#include "number.h"
 
 #include <iostream>
 
@@ -12,7 +13,7 @@ int lept_parse_value(lept_value & value, lept_content & con) {
         case 'n':   return lept_parse_literal(value, con, "null", LEPT_NULL);
         case 'f':   return lept_parse_literal(value, con, "false", LEPT_FALSE);
         case 't':   return lept_parse_literal(value, con, "true", LEPT_TRUE);
-        default:    return LEPT_PARSE_INVALID_VALUE;
+        default:    return lept_parse_number(value, con);
     }
 }
 
@@ -33,4 +34,8 @@ int my_json::lept_parse(lept_value & value, const char * json) {
 
 lept_type my_json::lept_get_type(const lept_value & value) {
     return value.type;
+}
+
+void my_json::lept_free(lept_value & value) {
+    value.type = LEPT_NULL;
 }

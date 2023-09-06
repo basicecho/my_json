@@ -6,6 +6,8 @@ namespace my_json{
         LEPT_NULL,
         LEPT_FALSE,
         LEPT_TRUE,
+        LEPT_NUMBER_INT,
+        LEPT_NUMBER_DOUBLE,
         LEPT_STRING,
         LEPT_ARRAY,
         LEPT_OBJECT
@@ -20,6 +22,11 @@ namespace my_json{
         lept_value(){type = LEPT_NULL;}
 
         lept_type type;
+
+        union {
+            int n_int;
+            double n_double;
+        };
     };
 
     enum {
@@ -31,5 +38,7 @@ namespace my_json{
 
     int lept_parse(lept_value & value, const char * json);
     lept_type lept_get_type(const lept_value & value);
+
+    void lept_free(lept_value & value);
 
 }

@@ -18,3 +18,6 @@ target_link_libraries(test_0 PUBLIC SRC_LIST gtest)
 
 add_executable(test_literal test/test_literal.cpp)
 target_link_libraries(test_literal PUBLIC SRC_LIST gtest)
+
+add_executable(test_number test/test_number.cpp)
+target_link_libraries(test_number PUBLIC SRC_LIST gtest)

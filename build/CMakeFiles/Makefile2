@@ -53,6 +53,7 @@ CMAKE_BINARY_DIR = /home/basicecho/Desktop/project/my_json/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
+all: CMakeFiles/test_number.dir/all
 all: CMakeFiles/test_literal.dir/all
 all: CMakeFiles/test_0.dir/all
 all: src/all
@@ -65,6 +66,7 @@ preinstall: src/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
+clean: CMakeFiles/test_number.dir/clean
 clean: CMakeFiles/test_literal.dir/clean
 clean: CMakeFiles/test_0.dir/clean
 clean: src/clean
@@ -90,18 +92,45 @@ src/clean: src/CMakeFiles/SRC_LIST.dir/clean
 .PHONY : src/clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/test_number.dir
+
+# All Build rule for target.
+CMakeFiles/test_number.dir/all: src/CMakeFiles/SRC_LIST.dir/all
+	$(MAKE) -f CMakeFiles/test_number.dir/build.make CMakeFiles/test_number.dir/depend
+	$(MAKE) -f CMakeFiles/test_number.dir/build.make CMakeFiles/test_number.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/basicecho/Desktop/project/my_json/build/CMakeFiles --progress-num=10,11 "Built target test_number"
+.PHONY : CMakeFiles/test_number.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/test_number.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/basicecho/Desktop/project/my_json/build/CMakeFiles 7
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/test_number.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/basicecho/Desktop/project/my_json/build/CMakeFiles 0
+.PHONY : CMakeFiles/test_number.dir/rule
+
+# Convenience name for target.
+test_number: CMakeFiles/test_number.dir/rule
+
+.PHONY : test_number
+
+# clean rule for target.
+CMakeFiles/test_number.dir/clean:
+	$(MAKE) -f CMakeFiles/test_number.dir/build.make CMakeFiles/test_number.dir/clean
+.PHONY : CMakeFiles/test_number.dir/clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/test_literal.dir
 
 # All Build rule for target.
 CMakeFiles/test_literal.dir/all: src/CMakeFiles/SRC_LIST.dir/all
 	$(MAKE) -f CMakeFiles/test_literal.dir/build.make CMakeFiles/test_literal.dir/depend
 	$(MAKE) -f CMakeFiles/test_literal.dir/build.make CMakeFiles/test_literal.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/basicecho/Desktop/project/my_json/build/CMakeFiles --progress-num=7,8 "Built target test_literal"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/basicecho/Desktop/project/my_json/build/CMakeFiles --progress-num=8,9 "Built target test_literal"
 .PHONY : CMakeFiles/test_literal.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/test_literal.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/basicecho/Desktop/project/my_json/build/CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/basicecho/Desktop/project/my_json/build/CMakeFiles 7
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/test_literal.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/basicecho/Desktop/project/my_json/build/CMakeFiles 0
 .PHONY : CMakeFiles/test_literal.dir/rule
@@ -123,12 +152,12 @@ CMakeFiles/test_literal.dir/clean:
 CMakeFiles/test_0.dir/all: src/CMakeFiles/SRC_LIST.dir/all
 	$(MAKE) -f CMakeFiles/test_0.dir/build.make CMakeFiles/test_0.dir/depend
 	$(MAKE) -f CMakeFiles/test_0.dir/build.make CMakeFiles/test_0.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/basicecho/Desktop/project/my_json/build/CMakeFiles --progress-num=5,6 "Built target test_0"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/basicecho/Desktop/project/my_json/build/CMakeFiles --progress-num=6,7 "Built target test_0"
 .PHONY : CMakeFiles/test_0.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/test_0.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/basicecho/Desktop/project/my_json/build/CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/basicecho/Desktop/project/my_json/build/CMakeFiles 7
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/test_0.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/basicecho/Desktop/project/my_json/build/CMakeFiles 0
 .PHONY : CMakeFiles/test_0.dir/rule
@@ -150,12 +179,12 @@ CMakeFiles/test_0.dir/clean:
 src/CMakeFiles/SRC_LIST.dir/all:
 	$(MAKE) -f src/CMakeFiles/SRC_LIST.dir/build.make src/CMakeFiles/SRC_LIST.dir/depend
 	$(MAKE) -f src/CMakeFiles/SRC_LIST.dir/build.make src/CMakeFiles/SRC_LIST.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/basicecho/Desktop/project/my_json/build/CMakeFiles --progress-num=1,2,3,4 "Built target SRC_LIST"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/basicecho/Desktop/project/my_json/build/CMakeFiles --progress-num=1,2,3,4,5 "Built target SRC_LIST"
 .PHONY : src/CMakeFiles/SRC_LIST.dir/all
 
 # Build rule for subdir invocation for target.
 src/CMakeFiles/SRC_LIST.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/basicecho/Desktop/project/my_json/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/basicecho/Desktop/project/my_json/build/CMakeFiles 5
 	$(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/SRC_LIST.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/basicecho/Desktop/project/my_json/build/CMakeFiles 0
 .PHONY : src/CMakeFiles/SRC_LIST.dir/rule

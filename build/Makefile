@@ -111,6 +111,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named test_number
+
+# Build rule for target.
+test_number: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test_number
+.PHONY : test_number
+
+# fast build rule for target.
+test_number/fast:
+	$(MAKE) -f CMakeFiles/test_number.dir/build.make CMakeFiles/test_number.dir/build
+.PHONY : test_number/fast
+
+#=============================================================================
 # Target rules for targets named test_literal
 
 # Build rule for target.
@@ -203,6 +216,33 @@ test/test_literal.cpp.s:
 	$(MAKE) -f CMakeFiles/test_literal.dir/build.make CMakeFiles/test_literal.dir/test/test_literal.cpp.s
 .PHONY : test/test_literal.cpp.s
 
+test/test_number.o: test/test_number.cpp.o
+
+.PHONY : test/test_number.o
+
+# target to build an object file
+test/test_number.cpp.o:
+	$(MAKE) -f CMakeFiles/test_number.dir/build.make CMakeFiles/test_number.dir/test/test_number.cpp.o
+.PHONY : test/test_number.cpp.o
+
+test/test_number.i: test/test_number.cpp.i
+
+.PHONY : test/test_number.i
+
+# target to preprocess a source file
+test/test_number.cpp.i:
+	$(MAKE) -f CMakeFiles/test_number.dir/build.make CMakeFiles/test_number.dir/test/test_number.cpp.i
+.PHONY : test/test_number.cpp.i
+
+test/test_number.s: test/test_number.cpp.s
+
+.PHONY : test/test_number.s
+
+# target to generate assembly for a file
+test/test_number.cpp.s:
+	$(MAKE) -f CMakeFiles/test_number.dir/build.make CMakeFiles/test_number.dir/test/test_number.cpp.s
+.PHONY : test/test_number.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -211,6 +251,7 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... test_number"
 	@echo "... test_literal"
 	@echo "... test_0"
 	@echo "... SRC_LIST"
@@ -220,6 +261,9 @@ help:
 	@echo "... test/test_literal.o"
 	@echo "... test/test_literal.i"
 	@echo "... test/test_literal.s"
+	@echo "... test/test_number.o"
+	@echo "... test/test_number.i"
+	@echo "... test/test_number.s"
 .PHONY : help
 
 

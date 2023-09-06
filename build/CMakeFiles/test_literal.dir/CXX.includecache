@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/leptjson.h
+
+/home/basicecho/Desktop/project/my_json/test/test_literal.cpp
+gtest/gtest.h
+/home/basicecho/Desktop/project/my_json/test/gtest/gtest.h
+leptjson.h
+/home/basicecho/Desktop/project/my_json/test/leptjson.h
+

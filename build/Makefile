@@ -111,6 +111,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named test_literal
+
+# Build rule for target.
+test_literal: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test_literal
+.PHONY : test_literal
+
+# fast build rule for target.
+test_literal/fast:
+	$(MAKE) -f CMakeFiles/test_literal.dir/build.make CMakeFiles/test_literal.dir/build
+.PHONY : test_literal/fast
+
+#=============================================================================
 # Target rules for targets named test_0
 
 # Build rule for target.
@@ -163,6 +176,33 @@ test/test_0.cpp.s:
 	$(MAKE) -f CMakeFiles/test_0.dir/build.make CMakeFiles/test_0.dir/test/test_0.cpp.s
 .PHONY : test/test_0.cpp.s
 
+test/test_literal.o: test/test_literal.cpp.o
+
+.PHONY : test/test_literal.o
+
+# target to build an object file
+test/test_literal.cpp.o:
+	$(MAKE) -f CMakeFiles/test_literal.dir/build.make CMakeFiles/test_literal.dir/test/test_literal.cpp.o
+.PHONY : test/test_literal.cpp.o
+
+test/test_literal.i: test/test_literal.cpp.i
+
+.PHONY : test/test_literal.i
+
+# target to preprocess a source file
+test/test_literal.cpp.i:
+	$(MAKE) -f CMakeFiles/test_literal.dir/build.make CMakeFiles/test_literal.dir/test/test_literal.cpp.i
+.PHONY : test/test_literal.cpp.i
+
+test/test_literal.s: test/test_literal.cpp.s
+
+.PHONY : test/test_literal.s
+
+# target to generate assembly for a file
+test/test_literal.cpp.s:
+	$(MAKE) -f CMakeFiles/test_literal.dir/build.make CMakeFiles/test_literal.dir/test/test_literal.cpp.s
+.PHONY : test/test_literal.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -171,11 +211,15 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... test_literal"
 	@echo "... test_0"
 	@echo "... SRC_LIST"
 	@echo "... test/test_0.o"
 	@echo "... test/test_0.i"
 	@echo "... test/test_0.s"
+	@echo "... test/test_literal.o"
+	@echo "... test/test_literal.i"
+	@echo "... test/test_literal.s"
 .PHONY : help
 
 

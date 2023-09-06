@@ -1,1 +1,1 @@
-/usr/bin/c++  -g  -rdynamic CMakeFiles/test_0.dir/test/test_0.cpp.o  -o test_0  src/libSRC_LIST.a 
+/usr/bin/c++  -g  -rdynamic CMakeFiles/test_0.dir/test/test_0.cpp.o  -o test_0   -L/home/basicecho/Desktop/project/my_json/lib  -Wl,-rpath,/home/basicecho/Desktop/project/my_json/lib src/libSRC_LIST.a 

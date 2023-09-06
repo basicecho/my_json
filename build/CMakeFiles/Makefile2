@@ -53,6 +53,7 @@ CMAKE_BINARY_DIR = /home/basicecho/Desktop/project/my_json/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
+all: CMakeFiles/test_literal.dir/all
 all: CMakeFiles/test_0.dir/all
 all: src/all
 
@@ -64,6 +65,7 @@ preinstall: src/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
+clean: CMakeFiles/test_literal.dir/clean
 clean: CMakeFiles/test_0.dir/clean
 clean: src/clean
 
@@ -86,6 +88,33 @@ src/preinstall:
 src/clean: src/CMakeFiles/SRC_LIST.dir/clean
 
 .PHONY : src/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/test_literal.dir
+
+# All Build rule for target.
+CMakeFiles/test_literal.dir/all: src/CMakeFiles/SRC_LIST.dir/all
+	$(MAKE) -f CMakeFiles/test_literal.dir/build.make CMakeFiles/test_literal.dir/depend
+	$(MAKE) -f CMakeFiles/test_literal.dir/build.make CMakeFiles/test_literal.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/basicecho/Desktop/project/my_json/build/CMakeFiles --progress-num=7,8 "Built target test_literal"
+.PHONY : CMakeFiles/test_literal.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/test_literal.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/basicecho/Desktop/project/my_json/build/CMakeFiles 6
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/test_literal.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/basicecho/Desktop/project/my_json/build/CMakeFiles 0
+.PHONY : CMakeFiles/test_literal.dir/rule
+
+# Convenience name for target.
+test_literal: CMakeFiles/test_literal.dir/rule
+
+.PHONY : test_literal
+
+# clean rule for target.
+CMakeFiles/test_literal.dir/clean:
+	$(MAKE) -f CMakeFiles/test_literal.dir/build.make CMakeFiles/test_literal.dir/clean
+.PHONY : CMakeFiles/test_literal.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/test_0.dir

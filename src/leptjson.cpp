@@ -2,6 +2,7 @@
 #include "util.h"
 #include "literal.h"
 #include "number.h"
+#include "my_string.h"
 
 #include <iostream>
 
@@ -14,6 +15,7 @@ int lept_parse_value(lept_value & value, lept_content & con) {
         case 'f':   return lept_parse_literal(value, con, "false", LEPT_FALSE);
         case 't':   return lept_parse_literal(value, con, "true", LEPT_TRUE);
         default:    return lept_parse_number(value, con);
+        case '\"':  return lept_parse_string(value, con);
     }
 }
 

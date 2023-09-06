@@ -15,6 +15,9 @@ namespace my_json{
 
     struct lept_content {
         const char * json;
+        const char * stack;
+        size_t size;
+        size_t top;
     };
 
     struct lept_value {
@@ -26,6 +29,13 @@ namespace my_json{
         union {
             int n_int;
             double n_double;
+
+            struct {
+                char * s;
+                size_t len;
+            }s;
+
+
         };
     };
 

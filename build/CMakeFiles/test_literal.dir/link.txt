@@ -1,1 +1,1 @@
-/usr/bin/c++  -g  -rdynamic CMakeFiles/test_literal.dir/test/test_literal.cpp.o  -o test_literal   -L/home/basicecho/Desktop/project/my_json/lib  -Wl,-rpath,/home/basicecho/Desktop/project/my_json/lib src/libSRC_LIST.a -Wl,-Bstatic -lgtest -lgtest_main -Wl,-Bdynamic -lpthread 
+/usr/bin/c++   -pthread -o2 -Wall -g  -rdynamic CMakeFiles/test_literal.dir/test/test_literal.cpp.o  -o test_literal   -L/home/basicecho/Desktop/project/my_json/lib  -Wl,-rpath,/home/basicecho/Desktop/project/my_json/lib src/libSRC_LIST.a -lgtest 

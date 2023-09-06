@@ -35,7 +35,6 @@ TEST(TESTCASE2, OK_FALSE) {
 }
 
 TEST(TESTCASE3, OK_TRUE) {
-    TEST_OK_TRUE("true");
     TEST_OK_TRUE("   true");
 }
 
@@ -52,6 +51,10 @@ TEST(TESTCASE4, WORNG) {
 
     value.type = LEPT_FALSE;
     EXPECT_EQ(lept_parse(value, "tr"), LEPT_PARSE_INVALID_VALUE);
+    EXPECT_EQ(lept_get_type(value), LEPT_NULL);
+
+    value.type = LEPT_FALSE;
+    EXPECT_EQ(lept_parse(value, "true  ttt"), LEPT_PARSE_END_NOT_EMPTY);
     EXPECT_EQ(lept_get_type(value), LEPT_NULL);
 }
 

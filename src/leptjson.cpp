@@ -20,7 +20,15 @@ int my_json::lept_parse(lept_value & value, const char * json) {
     lept_content con;
     con.json = json;
     lept_parse_whitespace(con);
-    return lept_parse_value(value, con);
+    int ret = lept_parse_value(value, con);
+    if(ret == LEPT_PARSE_OK) {
+        lept_parse_whitespace(con);
+        if(*con.json != '\0') {
+            value.type = LEPT_NULL;
+            ret = LEPT_PARSE_END_NOT_EMPTY;
+        }
+    }
+    return ret;
 }
 
 lept_type my_json::lept_get_type(const lept_value & value) {

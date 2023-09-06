@@ -3,15 +3,18 @@ project(my_json)
 
 set(CMAKE_BUILD_TYPE DEBUG)
 
-add_subdirectory(src)
+add_subdirectory(src) # 直接链接，不用导入头文件所在的地址了
+link_directories(lib) # 不用写CMakeLists.txt，直接进行链接就可以了
 
-include_directories(include)
+set(gtest libgtest.a libgtest_main.a)
 
-link_directories(lib)
+# 设置编译选项
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -pthread -o2 -Wall")
+set(gtest libgtest.a libgtest_main.a)
 
+# 测试样例
 add_executable(test_0 test/test_0.cpp)
-target_link_libraries(test_0 PUBLIC SRC_LIST)
+target_link_libraries(test_0 PUBLIC SRC_LIST gtest)
 
 add_executable(test_literal test/test_literal.cpp)
-target_link_libraries(test_literal PUBLIC SRC_LIST)
-target_link_libraries(test_literal PUBLIC libgtest.a libgtest_main.a pthread)
+target_link_libraries(test_literal PUBLIC SRC_LIST gtest)

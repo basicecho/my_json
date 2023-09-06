@@ -6,5 +6,5 @@ CXX_FLAGS = -g
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/basicecho/Desktop/project/my_json/include -I/include 
+CXX_INCLUDES = -I/home/basicecho/Desktop/project/my_json/include 
 

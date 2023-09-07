@@ -179,6 +179,33 @@ literal.cpp.s:
 	cd /home/basicecho/Desktop/project/my_json/build && $(MAKE) -f src/CMakeFiles/SRC_LIST.dir/build.make src/CMakeFiles/SRC_LIST.dir/literal.cpp.s
 .PHONY : literal.cpp.s
 
+my_array.o: my_array.cpp.o
+
+.PHONY : my_array.o
+
+# target to build an object file
+my_array.cpp.o:
+	cd /home/basicecho/Desktop/project/my_json/build && $(MAKE) -f src/CMakeFiles/SRC_LIST.dir/build.make src/CMakeFiles/SRC_LIST.dir/my_array.cpp.o
+.PHONY : my_array.cpp.o
+
+my_array.i: my_array.cpp.i
+
+.PHONY : my_array.i
+
+# target to preprocess a source file
+my_array.cpp.i:
+	cd /home/basicecho/Desktop/project/my_json/build && $(MAKE) -f src/CMakeFiles/SRC_LIST.dir/build.make src/CMakeFiles/SRC_LIST.dir/my_array.cpp.i
+.PHONY : my_array.cpp.i
+
+my_array.s: my_array.cpp.s
+
+.PHONY : my_array.s
+
+# target to generate assembly for a file
+my_array.cpp.s:
+	cd /home/basicecho/Desktop/project/my_json/build && $(MAKE) -f src/CMakeFiles/SRC_LIST.dir/build.make src/CMakeFiles/SRC_LIST.dir/my_array.cpp.s
+.PHONY : my_array.cpp.s
+
 my_string.o: my_string.cpp.o
 
 .PHONY : my_string.o
@@ -275,6 +302,9 @@ help:
 	@echo "... literal.o"
 	@echo "... literal.i"
 	@echo "... literal.s"
+	@echo "... my_array.o"
+	@echo "... my_array.i"
+	@echo "... my_array.s"
 	@echo "... my_string.o"
 	@echo "... my_string.i"
 	@echo "... my_string.s"

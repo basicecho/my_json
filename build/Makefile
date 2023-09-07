@@ -111,6 +111,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named test_array
+
+# Build rule for target.
+test_array: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test_array
+.PHONY : test_array
+
+# fast build rule for target.
+test_array/fast:
+	$(MAKE) -f CMakeFiles/test_array.dir/build.make CMakeFiles/test_array.dir/build
+.PHONY : test_array/fast
+
+#=============================================================================
 # Target rules for targets named test_string
 
 # Build rule for target.
@@ -202,6 +215,33 @@ test/test_0.cpp.s:
 	$(MAKE) -f CMakeFiles/test_0.dir/build.make CMakeFiles/test_0.dir/test/test_0.cpp.s
 .PHONY : test/test_0.cpp.s
 
+test/test_array.o: test/test_array.cpp.o
+
+.PHONY : test/test_array.o
+
+# target to build an object file
+test/test_array.cpp.o:
+	$(MAKE) -f CMakeFiles/test_array.dir/build.make CMakeFiles/test_array.dir/test/test_array.cpp.o
+.PHONY : test/test_array.cpp.o
+
+test/test_array.i: test/test_array.cpp.i
+
+.PHONY : test/test_array.i
+
+# target to preprocess a source file
+test/test_array.cpp.i:
+	$(MAKE) -f CMakeFiles/test_array.dir/build.make CMakeFiles/test_array.dir/test/test_array.cpp.i
+.PHONY : test/test_array.cpp.i
+
+test/test_array.s: test/test_array.cpp.s
+
+.PHONY : test/test_array.s
+
+# target to generate assembly for a file
+test/test_array.cpp.s:
+	$(MAKE) -f CMakeFiles/test_array.dir/build.make CMakeFiles/test_array.dir/test/test_array.cpp.s
+.PHONY : test/test_array.cpp.s
+
 test/test_literal.o: test/test_literal.cpp.o
 
 .PHONY : test/test_literal.o
@@ -291,6 +331,7 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... test_array"
 	@echo "... test_string"
 	@echo "... test_number"
 	@echo "... test_literal"
@@ -299,6 +340,9 @@ help:
 	@echo "... test/test_0.o"
 	@echo "... test/test_0.i"
 	@echo "... test/test_0.s"
+	@echo "... test/test_array.o"
+	@echo "... test/test_array.i"
+	@echo "... test/test_array.s"
 	@echo "... test/test_literal.o"
 	@echo "... test/test_literal.i"
 	@echo "... test/test_literal.s"

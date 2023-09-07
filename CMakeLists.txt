@@ -24,3 +24,6 @@ target_link_libraries(test_number PUBLIC SRC_LIST gtest)
 
 add_executable(test_string test/test_string.cpp)
 target_link_libraries(test_string PUBLIC SRC_LIST gtest)
+
+add_executable(test_array test/test_array.cpp)
+target_link_libraries(test_array PUBLIC SRC_LIST gtest)

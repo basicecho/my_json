@@ -21,13 +21,14 @@ void * my_json::lept_push_content(lept_content & con, size_t size) {
         if(con.size == 0)con.size = LEPT_PARSE_INIT_STACK;
         while(con.top + size >= con.size)con.size += con.size >> 1;
 
-        // increasing capacity
-        char * newStack = new char[size];
-        memcpy(newStack, con.stack, con.top);
-        if(con.top)delete [] con.stack;
+        char * newStack = new char[con.size];
+        if(con.stack != nullptr) {
+            memcpy(newStack, con.stack, con.top);
+            delete [] con.stack;
+        }
         con.stack = newStack;
     }
-    ret = (void *)con.stack + con.top;
+    ret = (void *)(con.stack + con.top);
     con.top += size;
     return ret;
 }
@@ -35,8 +36,8 @@ void * my_json::lept_push_content(lept_content & con, size_t size) {
 // 出栈是返回首地址
 void * my_json::lept_pop_content(lept_content & con, size_t size) {
     if(con.top < size) {
-        throw std::runtime_error("The pop operation is worng");
+        throw std::out_of_range("The pop operation is worng");
     }
     con.top -= size;
-    return (void *)con.stack + con.top;
+    return (void *)(con.stack + con.top);
 }

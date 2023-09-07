@@ -70,6 +70,8 @@ int my_json::lept_get_string_length(const lept_value & value) {
 
 char & my_json::lept_get_string_id(const lept_value & value, int index) {
     EXPECT(value);
-    if(value.type != LEPT_STRING)
+    if(index >= value.s.len) {
+        throw std::out_of_range("The string is small");
+    }
     return value.s.s[index];
 }

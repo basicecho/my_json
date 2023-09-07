@@ -17,7 +17,7 @@ namespace my_json{
 
     struct lept_content {
         const char * json;
-        const char * stack;
+        char * stack;
         size_t size;
         size_t top;
     };
@@ -37,6 +37,11 @@ namespace my_json{
                 size_t len;
             }s;
 
+            struct {
+                lept_value * a;
+                size_t len;
+            }a;
+            
 
         };
     };
@@ -45,10 +50,12 @@ namespace my_json{
         LEPT_PARSE_OK,
         LEPT_PARSE_EXPECT_VALUE,
         LEPT_PARSE_INVALID_VALUE,
-        LEPT_PARSE_END_NOT_EMPTY
+        LEPT_PARSE_END_NOT_EMPTY,
+        LEPT_PARSE_NOT_RIGHT_BRACKET
     };
 
     int lept_parse(lept_value & value, const char * json);
+    int lept_parse_value(lept_value & value, lept_content & con);
     lept_type lept_get_type(const lept_value & value);
 
     void lept_free(lept_value & value);

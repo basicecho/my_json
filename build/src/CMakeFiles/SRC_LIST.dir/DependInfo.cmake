@@ -6,6 +6,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/basicecho/Desktop/project/my_json/src/leptjson.cpp" "/home/basicecho/Desktop/project/my_json/build/src/CMakeFiles/SRC_LIST.dir/leptjson.cpp.o"
   "/home/basicecho/Desktop/project/my_json/src/literal.cpp" "/home/basicecho/Desktop/project/my_json/build/src/CMakeFiles/SRC_LIST.dir/literal.cpp.o"
+  "/home/basicecho/Desktop/project/my_json/src/my_array.cpp" "/home/basicecho/Desktop/project/my_json/build/src/CMakeFiles/SRC_LIST.dir/my_array.cpp.o"
   "/home/basicecho/Desktop/project/my_json/src/my_string.cpp" "/home/basicecho/Desktop/project/my_json/build/src/CMakeFiles/SRC_LIST.dir/my_string.cpp.o"
   "/home/basicecho/Desktop/project/my_json/src/number.cpp" "/home/basicecho/Desktop/project/my_json/build/src/CMakeFiles/SRC_LIST.dir/number.cpp.o"
   "/home/basicecho/Desktop/project/my_json/src/util.cpp" "/home/basicecho/Desktop/project/my_json/build/src/CMakeFiles/SRC_LIST.dir/util.cpp.o"

@@ -179,6 +179,33 @@ literal.cpp.s:
 	cd /home/basicecho/Desktop/project/my_json/build && $(MAKE) -f src/CMakeFiles/SRC_LIST.dir/build.make src/CMakeFiles/SRC_LIST.dir/literal.cpp.s
 .PHONY : literal.cpp.s
 
+my_string.o: my_string.cpp.o
+
+.PHONY : my_string.o
+
+# target to build an object file
+my_string.cpp.o:
+	cd /home/basicecho/Desktop/project/my_json/build && $(MAKE) -f src/CMakeFiles/SRC_LIST.dir/build.make src/CMakeFiles/SRC_LIST.dir/my_string.cpp.o
+.PHONY : my_string.cpp.o
+
+my_string.i: my_string.cpp.i
+
+.PHONY : my_string.i
+
+# target to preprocess a source file
+my_string.cpp.i:
+	cd /home/basicecho/Desktop/project/my_json/build && $(MAKE) -f src/CMakeFiles/SRC_LIST.dir/build.make src/CMakeFiles/SRC_LIST.dir/my_string.cpp.i
+.PHONY : my_string.cpp.i
+
+my_string.s: my_string.cpp.s
+
+.PHONY : my_string.s
+
+# target to generate assembly for a file
+my_string.cpp.s:
+	cd /home/basicecho/Desktop/project/my_json/build && $(MAKE) -f src/CMakeFiles/SRC_LIST.dir/build.make src/CMakeFiles/SRC_LIST.dir/my_string.cpp.s
+.PHONY : my_string.cpp.s
+
 number.o: number.cpp.o
 
 .PHONY : number.o
@@ -248,6 +275,9 @@ help:
 	@echo "... literal.o"
 	@echo "... literal.i"
 	@echo "... literal.s"
+	@echo "... my_string.o"
+	@echo "... my_string.i"
+	@echo "... my_string.s"
 	@echo "... number.o"
 	@echo "... number.i"
 	@echo "... number.s"

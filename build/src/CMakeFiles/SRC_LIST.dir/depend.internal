@@ -4,6 +4,7 @@
 src/CMakeFiles/SRC_LIST.dir/leptjson.cpp.o
  ../include/leptjson.h
  ../include/literal.h
+ ../include/my_string.h
  ../include/number.h
  ../include/util.h
  /home/basicecho/Desktop/project/my_json/src/leptjson.cpp
@@ -11,6 +12,11 @@ src/CMakeFiles/SRC_LIST.dir/literal.cpp.o
  ../include/leptjson.h
  ../include/literal.h
  /home/basicecho/Desktop/project/my_json/src/literal.cpp
+src/CMakeFiles/SRC_LIST.dir/my_string.cpp.o
+ ../include/leptjson.h
+ ../include/my_string.h
+ ../include/util.h
+ /home/basicecho/Desktop/project/my_json/src/my_string.cpp
 src/CMakeFiles/SRC_LIST.dir/number.cpp.o
  ../include/leptjson.h
  ../include/number.h

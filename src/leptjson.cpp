@@ -22,6 +22,8 @@ int lept_parse_value(lept_value & value, lept_content & con) {
 int my_json::lept_parse(lept_value & value, const char * json) {
     lept_content con;
     con.json = json;
+    con.top = 0;
+    con.size = 0;
     lept_parse_whitespace(con);
     int ret = lept_parse_value(value, con);
     if(ret == LEPT_PARSE_OK) {
@@ -39,5 +41,9 @@ lept_type my_json::lept_get_type(const lept_value & value) {
 }
 
 void my_json::lept_free(lept_value & value) {
+    if(value.type == LEPT_STRING && value.s.len != 0) {
+        delete [] value.s.s;
+        value.s.len = 0;
+    }
     value.type = LEPT_NULL;
 }

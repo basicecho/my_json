@@ -111,6 +111,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named test_string
+
+# Build rule for target.
+test_string: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test_string
+.PHONY : test_string
+
+# fast build rule for target.
+test_string/fast:
+	$(MAKE) -f CMakeFiles/test_string.dir/build.make CMakeFiles/test_string.dir/build
+.PHONY : test_string/fast
+
+#=============================================================================
 # Target rules for targets named test_number
 
 # Build rule for target.
@@ -243,6 +256,33 @@ test/test_number.cpp.s:
 	$(MAKE) -f CMakeFiles/test_number.dir/build.make CMakeFiles/test_number.dir/test/test_number.cpp.s
 .PHONY : test/test_number.cpp.s
 
+test/test_string.o: test/test_string.cpp.o
+
+.PHONY : test/test_string.o
+
+# target to build an object file
+test/test_string.cpp.o:
+	$(MAKE) -f CMakeFiles/test_string.dir/build.make CMakeFiles/test_string.dir/test/test_string.cpp.o
+.PHONY : test/test_string.cpp.o
+
+test/test_string.i: test/test_string.cpp.i
+
+.PHONY : test/test_string.i
+
+# target to preprocess a source file
+test/test_string.cpp.i:
+	$(MAKE) -f CMakeFiles/test_string.dir/build.make CMakeFiles/test_string.dir/test/test_string.cpp.i
+.PHONY : test/test_string.cpp.i
+
+test/test_string.s: test/test_string.cpp.s
+
+.PHONY : test/test_string.s
+
+# target to generate assembly for a file
+test/test_string.cpp.s:
+	$(MAKE) -f CMakeFiles/test_string.dir/build.make CMakeFiles/test_string.dir/test/test_string.cpp.s
+.PHONY : test/test_string.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -251,6 +291,7 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... test_string"
 	@echo "... test_number"
 	@echo "... test_literal"
 	@echo "... test_0"
@@ -264,6 +305,9 @@ help:
 	@echo "... test/test_number.o"
 	@echo "... test/test_number.i"
 	@echo "... test/test_number.s"
+	@echo "... test/test_string.o"
+	@echo "... test/test_string.i"
+	@echo "... test/test_string.s"
 .PHONY : help
 
 

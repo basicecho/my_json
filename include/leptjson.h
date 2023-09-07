@@ -1,5 +1,7 @@
 #pragma once
 
+#include <cstddef>
+
 namespace my_json{
 
     enum lept_type {

@@ -1,0 +1,1 @@
+/usr/bin/c++   -pthread -o2 -Wall -g  -rdynamic CMakeFiles/test_string.dir/test/test_string.cpp.o  -o test_string   -L/home/basicecho/Desktop/project/my_json/lib  -Wl,-rpath,/home/basicecho/Desktop/project/my_json/lib src/libSRC_LIST.a -lgtest 

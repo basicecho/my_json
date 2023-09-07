@@ -7,6 +7,8 @@
 #IncludeRegexTransform: 
 
 ../include/leptjson.h
+cstddef
+-
 
 /home/basicecho/Desktop/project/my_json/test/test_literal.cpp
 gtest/gtest.h

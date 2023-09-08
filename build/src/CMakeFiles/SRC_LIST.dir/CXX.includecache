@@ -10,11 +10,13 @@
 cstddef
 -
 
-../include/my_array.h
+../include/my_object.h
 leptjson.h
 ../include/leptjson.h
-util.h
-../include/util.h
+
+../include/my_string.h
+leptjson.h
+../include/leptjson.h
 
 ../include/util.h
 leptjson.h
@@ -22,23 +24,15 @@ leptjson.h
 cstddef
 -
 
-/home/basicecho/Desktop/project/my_json/src/my_array.cpp
-my_array.h
-/home/basicecho/Desktop/project/my_json/src/my_array.h
-leptjson.h
-/home/basicecho/Desktop/project/my_json/src/leptjson.h
+/home/basicecho/Desktop/project/my_json/src/my_object.cpp
+my_object.h
+/home/basicecho/Desktop/project/my_json/src/my_object.h
+my_string.h
+/home/basicecho/Desktop/project/my_json/src/my_string.h
 util.h
 /home/basicecho/Desktop/project/my_json/src/util.h
 iostream
 -
 cstring
--
-
-/home/basicecho/Desktop/project/my_json/src/util.cpp
-util.h
-/home/basicecho/Desktop/project/my_json/src/util.h
-cstring
--
-iostream
 -
 

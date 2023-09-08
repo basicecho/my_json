@@ -206,6 +206,33 @@ my_array.cpp.s:
 	cd /home/basicecho/Desktop/project/my_json/build && $(MAKE) -f src/CMakeFiles/SRC_LIST.dir/build.make src/CMakeFiles/SRC_LIST.dir/my_array.cpp.s
 .PHONY : my_array.cpp.s
 
+my_object.o: my_object.cpp.o
+
+.PHONY : my_object.o
+
+# target to build an object file
+my_object.cpp.o:
+	cd /home/basicecho/Desktop/project/my_json/build && $(MAKE) -f src/CMakeFiles/SRC_LIST.dir/build.make src/CMakeFiles/SRC_LIST.dir/my_object.cpp.o
+.PHONY : my_object.cpp.o
+
+my_object.i: my_object.cpp.i
+
+.PHONY : my_object.i
+
+# target to preprocess a source file
+my_object.cpp.i:
+	cd /home/basicecho/Desktop/project/my_json/build && $(MAKE) -f src/CMakeFiles/SRC_LIST.dir/build.make src/CMakeFiles/SRC_LIST.dir/my_object.cpp.i
+.PHONY : my_object.cpp.i
+
+my_object.s: my_object.cpp.s
+
+.PHONY : my_object.s
+
+# target to generate assembly for a file
+my_object.cpp.s:
+	cd /home/basicecho/Desktop/project/my_json/build && $(MAKE) -f src/CMakeFiles/SRC_LIST.dir/build.make src/CMakeFiles/SRC_LIST.dir/my_object.cpp.s
+.PHONY : my_object.cpp.s
+
 my_string.o: my_string.cpp.o
 
 .PHONY : my_string.o
@@ -305,6 +332,9 @@ help:
 	@echo "... my_array.o"
 	@echo "... my_array.i"
 	@echo "... my_array.s"
+	@echo "... my_object.o"
+	@echo "... my_object.i"
+	@echo "... my_object.s"
 	@echo "... my_string.o"
 	@echo "... my_string.i"
 	@echo "... my_string.s"

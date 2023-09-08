@@ -1,0 +1,46 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/leptjson.h
+cstddef
+-
+
+../include/my_array.h
+leptjson.h
+../include/leptjson.h
+util.h
+../include/util.h
+
+../include/my_object.h
+leptjson.h
+../include/leptjson.h
+
+../include/my_string.h
+leptjson.h
+../include/leptjson.h
+
+../include/util.h
+leptjson.h
+../include/leptjson.h
+cstddef
+-
+
+/home/basicecho/Desktop/project/my_json/test/test_object.cpp
+gtest/gtest.h
+/home/basicecho/Desktop/project/my_json/test/gtest/gtest.h
+leptjson.h
+/home/basicecho/Desktop/project/my_json/test/leptjson.h
+my_object.h
+/home/basicecho/Desktop/project/my_json/test/my_object.h
+my_array.h
+/home/basicecho/Desktop/project/my_json/test/my_array.h
+my_string.h
+/home/basicecho/Desktop/project/my_json/test/my_string.h
+iostream
+-
+

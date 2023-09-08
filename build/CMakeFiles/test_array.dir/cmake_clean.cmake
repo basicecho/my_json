@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/test_array.dir/test/gtest_main.cpp.o"
   "CMakeFiles/test_array.dir/test/test_array.cpp.o"
   "test_array"
   "test_array.pdb"

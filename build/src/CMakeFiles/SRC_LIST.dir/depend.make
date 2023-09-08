@@ -4,6 +4,7 @@
 src/CMakeFiles/SRC_LIST.dir/leptjson.cpp.o: ../include/leptjson.h
 src/CMakeFiles/SRC_LIST.dir/leptjson.cpp.o: ../include/literal.h
 src/CMakeFiles/SRC_LIST.dir/leptjson.cpp.o: ../include/my_array.h
+src/CMakeFiles/SRC_LIST.dir/leptjson.cpp.o: ../include/my_object.h
 src/CMakeFiles/SRC_LIST.dir/leptjson.cpp.o: ../include/my_string.h
 src/CMakeFiles/SRC_LIST.dir/leptjson.cpp.o: ../include/number.h
 src/CMakeFiles/SRC_LIST.dir/leptjson.cpp.o: ../include/util.h
@@ -17,6 +18,12 @@ src/CMakeFiles/SRC_LIST.dir/my_array.cpp.o: ../include/leptjson.h
 src/CMakeFiles/SRC_LIST.dir/my_array.cpp.o: ../include/my_array.h
 src/CMakeFiles/SRC_LIST.dir/my_array.cpp.o: ../include/util.h
 src/CMakeFiles/SRC_LIST.dir/my_array.cpp.o: ../src/my_array.cpp
+
+src/CMakeFiles/SRC_LIST.dir/my_object.cpp.o: ../include/leptjson.h
+src/CMakeFiles/SRC_LIST.dir/my_object.cpp.o: ../include/my_object.h
+src/CMakeFiles/SRC_LIST.dir/my_object.cpp.o: ../include/my_string.h
+src/CMakeFiles/SRC_LIST.dir/my_object.cpp.o: ../include/util.h
+src/CMakeFiles/SRC_LIST.dir/my_object.cpp.o: ../src/my_object.cpp
 
 src/CMakeFiles/SRC_LIST.dir/my_string.cpp.o: ../include/leptjson.h
 src/CMakeFiles/SRC_LIST.dir/my_string.cpp.o: ../include/my_string.h

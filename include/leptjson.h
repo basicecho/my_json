@@ -22,6 +22,8 @@ namespace my_json{
         size_t top;
     };
 
+    struct lept_mapper;
+
     struct lept_value {
 
         lept_value(){type = LEPT_NULL;}
@@ -42,8 +44,26 @@ namespace my_json{
                 size_t len;
             }a;
             
-
+            // 
+            struct { 
+                size_t len;
+                lept_mapper * a;
+            }o;
+            
         };
+
+    };
+
+    struct lept_mapper {
+
+        lept_mapper() {
+            klen = 0;
+            key = nullptr;
+        }
+
+        char * key;
+        size_t klen;
+        lept_value value;
     };
 
     enum {

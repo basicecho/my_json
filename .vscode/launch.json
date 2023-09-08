@@ -8,7 +8,7 @@
             "name": "(gdb) 启动",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${fileDirname}/../build/test_array",
+            "program": "${fileDirname}/../build/test_object",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${fileDirname}",

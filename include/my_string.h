@@ -5,6 +5,9 @@ using namespace my_json;
 
 namespace my_json {
     int lept_parse_string(lept_value & value, lept_content & con);
+    int lept_parse_get_string(lept_content & con, char* & s, size_t & len);
+
+
     void lept_set_string(lept_value & value, const char * s, size_t size);
     char * lept_get_string(const lept_value & value);
     int lept_get_string_length(const lept_value & value);

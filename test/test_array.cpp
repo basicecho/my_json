@@ -34,8 +34,3 @@ TEST(TestCase3, TEST_TOW) {
     lept_value value2 = lept_get_array_id(value, 1);
     EXPECT_EQ(lept_get_type(value2), LEPT_FALSE);
 }
-
-int main(int argc, char * argv[]) {
-    testing::InitGoogleTest(&argc, argv);
-    return RUN_ALL_TESTS();
-}

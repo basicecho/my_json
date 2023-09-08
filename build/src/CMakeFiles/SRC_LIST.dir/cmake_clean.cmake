@@ -2,6 +2,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/SRC_LIST.dir/leptjson.cpp.o"
   "CMakeFiles/SRC_LIST.dir/literal.cpp.o"
   "CMakeFiles/SRC_LIST.dir/my_array.cpp.o"
+  "CMakeFiles/SRC_LIST.dir/my_object.cpp.o"
   "CMakeFiles/SRC_LIST.dir/my_string.cpp.o"
   "CMakeFiles/SRC_LIST.dir/number.cpp.o"
   "CMakeFiles/SRC_LIST.dir/util.cpp.o"

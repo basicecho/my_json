@@ -4,6 +4,7 @@
 #include "number.h"
 #include "my_string.h"
 #include "my_array.h"
+#include "my_object.h"
 
 #include <iostream>
 
@@ -18,6 +19,7 @@ int my_json::lept_parse_value(lept_value & value, lept_content & con) {
         default:    return lept_parse_number(value, con);
         case '\"':  return lept_parse_string(value, con);
         case '[':   return lept_parse_array(value, con);
+        case '{':   return lept_parse_object(value, con);
     }
 }
 
@@ -29,6 +31,8 @@ int my_json::lept_parse(lept_value & value, const char * json) {
     con.stack = nullptr;
     lept_parse_whitespace(con);
     int ret = lept_parse_value(value, con);
+    if(con.stack != nullptr)delete [] con.stack;
+    
     if(ret == LEPT_PARSE_OK) {
         lept_parse_whitespace(con);
         if(*con.json != '\0') {
@@ -56,6 +60,15 @@ void my_json::lept_free(lept_value & value) {
         delete [] value.a.a;
         value.a.a = nullptr;
         value.a.len = 0;
+    }
+    else if(value.type == LEPT_OBJECT && value.o.len != 0) {
+        for(size_t i = 0; i < value.o.len; i++) {
+            lept_mapper & temp = value.o.a[i];
+            delete [] temp.key;
+            temp.klen = 0;
+            lept_free(temp.value);
+        }
+        value.o.len = 0;
     }
     value.type = LEPT_NULL;
 }

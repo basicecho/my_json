@@ -4,6 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/home/basicecho/Desktop/project/my_json/test/gtest_main.cpp" "/home/basicecho/Desktop/project/my_json/build/CMakeFiles/test_array.dir/test/gtest_main.cpp.o"
   "/home/basicecho/Desktop/project/my_json/test/test_array.cpp" "/home/basicecho/Desktop/project/my_json/build/CMakeFiles/test_array.dir/test/test_array.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

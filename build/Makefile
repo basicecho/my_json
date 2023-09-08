@@ -163,6 +163,19 @@ test_literal/fast:
 .PHONY : test_literal/fast
 
 #=============================================================================
+# Target rules for targets named test_object
+
+# Build rule for target.
+test_object: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test_object
+.PHONY : test_object
+
+# fast build rule for target.
+test_object/fast:
+	$(MAKE) -f CMakeFiles/test_object.dir/build.make CMakeFiles/test_object.dir/build
+.PHONY : test_object/fast
+
+#=============================================================================
 # Target rules for targets named test_0
 
 # Build rule for target.
@@ -187,6 +200,36 @@ SRC_LIST: cmake_check_build_system
 SRC_LIST/fast:
 	$(MAKE) -f src/CMakeFiles/SRC_LIST.dir/build.make src/CMakeFiles/SRC_LIST.dir/build
 .PHONY : SRC_LIST/fast
+
+test/gtest_main.o: test/gtest_main.cpp.o
+
+.PHONY : test/gtest_main.o
+
+# target to build an object file
+test/gtest_main.cpp.o:
+	$(MAKE) -f CMakeFiles/test_array.dir/build.make CMakeFiles/test_array.dir/test/gtest_main.cpp.o
+	$(MAKE) -f CMakeFiles/test_object.dir/build.make CMakeFiles/test_object.dir/test/gtest_main.cpp.o
+.PHONY : test/gtest_main.cpp.o
+
+test/gtest_main.i: test/gtest_main.cpp.i
+
+.PHONY : test/gtest_main.i
+
+# target to preprocess a source file
+test/gtest_main.cpp.i:
+	$(MAKE) -f CMakeFiles/test_array.dir/build.make CMakeFiles/test_array.dir/test/gtest_main.cpp.i
+	$(MAKE) -f CMakeFiles/test_object.dir/build.make CMakeFiles/test_object.dir/test/gtest_main.cpp.i
+.PHONY : test/gtest_main.cpp.i
+
+test/gtest_main.s: test/gtest_main.cpp.s
+
+.PHONY : test/gtest_main.s
+
+# target to generate assembly for a file
+test/gtest_main.cpp.s:
+	$(MAKE) -f CMakeFiles/test_array.dir/build.make CMakeFiles/test_array.dir/test/gtest_main.cpp.s
+	$(MAKE) -f CMakeFiles/test_object.dir/build.make CMakeFiles/test_object.dir/test/gtest_main.cpp.s
+.PHONY : test/gtest_main.cpp.s
 
 test/test_0.o: test/test_0.cpp.o
 
@@ -296,6 +339,33 @@ test/test_number.cpp.s:
 	$(MAKE) -f CMakeFiles/test_number.dir/build.make CMakeFiles/test_number.dir/test/test_number.cpp.s
 .PHONY : test/test_number.cpp.s
 
+test/test_object.o: test/test_object.cpp.o
+
+.PHONY : test/test_object.o
+
+# target to build an object file
+test/test_object.cpp.o:
+	$(MAKE) -f CMakeFiles/test_object.dir/build.make CMakeFiles/test_object.dir/test/test_object.cpp.o
+.PHONY : test/test_object.cpp.o
+
+test/test_object.i: test/test_object.cpp.i
+
+.PHONY : test/test_object.i
+
+# target to preprocess a source file
+test/test_object.cpp.i:
+	$(MAKE) -f CMakeFiles/test_object.dir/build.make CMakeFiles/test_object.dir/test/test_object.cpp.i
+.PHONY : test/test_object.cpp.i
+
+test/test_object.s: test/test_object.cpp.s
+
+.PHONY : test/test_object.s
+
+# target to generate assembly for a file
+test/test_object.cpp.s:
+	$(MAKE) -f CMakeFiles/test_object.dir/build.make CMakeFiles/test_object.dir/test/test_object.cpp.s
+.PHONY : test/test_object.cpp.s
+
 test/test_string.o: test/test_string.cpp.o
 
 .PHONY : test/test_string.o
@@ -335,8 +405,12 @@ help:
 	@echo "... test_string"
 	@echo "... test_number"
 	@echo "... test_literal"
+	@echo "... test_object"
 	@echo "... test_0"
 	@echo "... SRC_LIST"
+	@echo "... test/gtest_main.o"
+	@echo "... test/gtest_main.i"
+	@echo "... test/gtest_main.s"
 	@echo "... test/test_0.o"
 	@echo "... test/test_0.i"
 	@echo "... test/test_0.s"
@@ -349,6 +423,9 @@ help:
 	@echo "... test/test_number.o"
 	@echo "... test/test_number.i"
 	@echo "... test/test_number.s"
+	@echo "... test/test_object.o"
+	@echo "... test/test_object.i"
+	@echo "... test/test_object.s"
 	@echo "... test/test_string.o"
 	@echo "... test/test_string.i"
 	@echo "... test/test_string.s"
